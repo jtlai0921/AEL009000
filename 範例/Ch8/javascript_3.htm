@@ -1,0 +1,25 @@
+<HTML>
+  <HEAD>
+    <TITLE>網頁跑馬燈</TITLE>
+    <SCRIPT LANGUAGE="javascript">
+      var info="歡迎光臨翠墨資訊的網站﹗　　　　　　　　　　　　　　　";
+      var interval = 200;
+      var empty="";
+      var sin=0;
+      function Scroll()
+      {
+        document.myForm.myText.value = info.substring(sin, info.length) + empty + info.substring(0, info.length);
+        sin++;
+        sin++;
+        if (sin > info.length) 
+          sin = 0;
+        window.setTimeout("Scroll();", interval);
+       } 
+    </SCRIPT>
+  </HEAD>
+  <BODY onload="javascript:Scroll()">
+    <FORM NAME="myForm">
+      <INPUT TYPE="TEXT" NAME="myText" SIZE="30">
+    </FORM>
+  </BODY>
+</HTML>

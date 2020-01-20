@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>禁止使用滑鼠右鍵</title>
+  </head>
+  <body>
+    <script language=JavaScript>
+      function sourcelock() {
+        if (document.all)
+          document.body.onmousedown=
+	     new Function("if (event.button==2||event.button==3)\
+			alert('版權所有，請勿隨意拷貝網頁資料！')")
+         }
+      sourcelock()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html40/strict.dtd">
+<HTML>
+    <HEAD>
+        <TITLE>個人小檔案</TITLE>
+    </HEAD>
+    <BODY BGCOLOR="#D1FCE8">
+        <CENTER><IMG SRC="profile1.jpg"></CENTER>
+        <FORM METHOD="POST" ACTION="確認網頁.asp">
+            <FIELDSET>
+                <LEGEND>個人資訊</LEGEND>
+                姓&nbsp;&nbsp;&nbsp;&nbsp;名：
+                  <INPUT TYPE="TEXT" NAME="UserName" SIZE="20"><BR>
+                性&nbsp;&nbsp;&nbsp;&nbsp;別：
+                  <INPUT TYPE="RADIO" NAME="UserSex" VALUE="Male">男
+                  <INPUT TYPE="RADIO" NAME="UserSex" VALUE="Female">女<BR>
+                最高學歷：
+                  <SELECT NAME="UserSchool" SIZE="4">
+                    <OPTION VALUE="高中以下">高中以下
+                    <OPTION VALUE="大專院校">大專院校
+                    <OPTION VALUE="碩士">碩士</OPTION>
+                    <OPTION VALUE="博士">博士</OPTION>
+                    <OPTION VALUE="其它">其它</OPTION>
+                  </SELECT><BR>
+            </FIELDSET>
+            <P></P>
+            <FIELDSET>
+                <LEGEND>其它資訊</LEGEND> 
+                您喜歡下列哪些活動（可複選）？
+                  <INPUT TYPE="CHECKBOX" NAME="UserInterest" VALUE="閱讀">閱讀
+                  <INPUT TYPE="CHECKBOX" NAME="UserInterest" VALUE="打球">打球
+                  <INPUT TYPE="CHECKBOX" NAME="UserInterest" VALUE="逛街">逛街
+                  <INPUT TYPE="CHECKBOX" NAME="UserInterest" VALUE="聽音樂">聽音樂
+                  <INPUT TYPE="CHECKBOX" NAME="UserInterest" VALUE="水上運動">水上運動
+                  <INPUT TYPE="CHECKBOX" NAME="UserInterest" VALUE="旅行">旅行<BR> 
+                您對於目前的哈日風有何看法？<BR>
+                  <TEXTAREA NAME="UserThought" COLS="45" ROWS="4"></TEXTAREA><BR>  
+            </FIELDSET>  
+            <P><INPUT TYPE="SUBMIT" VALUE="傳送資料">   
+               <INPUT TYPE="RESET" VALUE="清除資料"></P>                     
+        </FORM>
+        
+    </BODY> 
+</HTML>
+	     

@@ -1,0 +1,20 @@
+<HTML>
+  <HEAD>
+    <TITLE>隨機播放背景音樂</TITLE>
+  </HEAD>
+  <BODY>
+    <SCRIPT LANGUAGE="javascript">
+      var bgSongs = new Array();
+      bgSongs[0] = "兩個人的下雪天.mid"; 
+      bgSongs[1] = "守候永恆的愛.mid"; 
+      bgSongs[2] = "揮著翅膀的女孩.mid"; 
+      bgSongs[3] = "七月七日晴.mid"; 
+      var num = Math.floor(Math.random()*bgSongs.length);
+      if (document.all)		// 若瀏覽器為IE
+        document.write('<BGSOUND SRC="'+ bgSongs[num] + '" LOOP="INFINITE">');
+      else{
+        document.write('<EMBED SRC="' + bgSongs[num]+ '" LOOP="TRUE" '+  'HIDDEN AUTOSTART="TRUE">');
+      }      
+    </SCRIPT> 
+  </BODY>
+</HTML>

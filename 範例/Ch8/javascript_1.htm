@@ -1,0 +1,20 @@
+<HTML>
+  <HEAD>
+    <TITLE>狀態列跑馬燈</TITLE>
+    <SCRIPT LANGUAGE="javascript">
+      var info="歡迎光臨翠墨資訊的網站！";	
+      var interval = 200;
+      sin = 0;
+      function Scroll() {
+        len = info.length;
+        window.status = info.substring(0, sin+1);
+        sin++;
+        if (sin >= len) 
+          sin = 0;
+        window.setTimeout("Scroll();", interval);
+      } 
+    </SCRIPT>
+  </HEAD>
+  <BODY onload="javascript:Scroll()">
+  </BODY>
+</HTML>

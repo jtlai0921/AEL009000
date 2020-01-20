@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>具提示效果的超連結</title>
+</head>
+<body>
+  <script language=vbscript>
+   sub ShowAns(Tips)
+    document.all(Tips).style.visibility=show
+   end sub
+   sub HideAns(Tips)
+    document.all(Tips).style.visibility="hidden"
+   end sub
+  </script>
+  <font onMouseMove="ShowAns('Ans_1')" onMouseOut="HideAns('Ans_1')">
+  <u>飲食男女</u></font><br>
+  <font onMouseMove="ShowAns('Ans_2')" onMouseOut="HideAns('Ans_2')">
+  <u>臥虎藏龍</u></font><br>
+  <font onMouseMove="ShowAns('Ans_3')" onMouseOut="HideAns('Ans_3')">
+  <u>色戒</u></font><br>
+  <P ID="Ans_1" STYLE="position:absolute;left:250px;top:15px;visibility:hidden;">
+  <font color="#FF0000">大導演李安經典作品</font>
+  <P ID="Ans_2" STYLE="position:absolute;left:180px;top:41px;visibility:hidden;">
+  <font color="#0000FF">大導演李安武俠鉅獻</font>
+  <P ID="Ans_3" STYLE="position:absolute;left:170px;top:65px;visibility:hidden;">
+  <font color="#009933">大導演李安問鼎威尼斯影展最新力作</font>
+</body>
+</html>

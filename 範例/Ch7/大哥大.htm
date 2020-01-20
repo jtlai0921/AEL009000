@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html40/strict.dtd">
+<HTML>
+    <HEAD>
+        <TITLE>大哥大使用意見調查表</TITLE>
+    </HEAD>
+    <BODY BACKGROUND="mobil0.jpg">
+      <P><IMG SRC="mobil1.jpg"></P>
+      <FORM>
+        姓&nbsp;&nbsp;名：<INPUT TYPE="TEXT" NAME="UserName" SIZE="40"><BR>
+        E-Mail：<INPUT TYPE="TEXT" NAME="UserMail" SIZE="40"
+          VALUE="username@mailserver"><BR>
+        年&nbsp;&nbsp;齡：
+        <INPUT TYPE="RADIO" NAME="UserAge" VALUE="Age1">未滿20歲
+        <INPUT TYPE="RADIO" NAME="UserAge" VALUE="Age2" CHECKED>20~29
+        <INPUT TYPE="RADIO" NAME="UserAge" VALUE="Age3">30~39
+        <INPUT TYPE="RADIO" NAME="UserAge" VALUE="Age4">40~49
+        <INPUT TYPE="RADIO" NAME="UserAge" VALUE="Age5">50歲以上<BR>
+        您曾經使用過哪些廠牌的手機？
+        <INPUT TYPE="CHECKBOX" NAME="UserPhone" VALUE="諾基亞" CHECKED>諾基亞
+        <INPUT TYPE="CHECKBOX" NAME="UserPhone" VALUE="摩扥羅拉">摩扥羅拉
+        <INPUT TYPE="CHECKBOX" NAME="UserPhone" VALUE="易利信">易利信
+        <INPUT TYPE="CHECKBOX" NAME="UserPhone" VALUE="華碩">華碩<BR>
+        您使用手機時最常碰到哪些問題？<BR>
+        <TEXTAREA NAME="UserTrouble" COLS="45" ROWS="4">線路太忙</TEXTAREA><BR>
+        您使用哪家業者的門號？(可複選)
+        <SELECT NAME="UserNumber" SIZE="4" MULTIPLE>
+          <OPTION VALUE="中華電信">中華電信
+          <OPTION VALUE="台灣大哥大" SELECTED>台灣大哥大
+          <OPTION VALUE="遠傳">遠傳
+          <OPTION VALUE="威寶">威寶
+          <OPTION VALUE="其它">其它
+        </SELECT><BR>
+
+        <INPUT TYPE="SUBMIT" VALUE="提交">
+        <INPUT TYPE="RESET" VALUE="重新輸入">
+      </FORM>
+    </BODY>
+</HTML>
